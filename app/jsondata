@@ -1,0 +1,27 @@
+summary = I have done blah blah blah blah
+workexperience[0]
+  company = Birlasoft
+  title= Software Engineer
+  Roles[] = blaah blaah, blaah blaah blaaah, balfaaaha baal,dflsdkjfjdlksf, dsjfhdfhdsflj
+  year= Sept 2010 - Sept 2012
+workexperience[1]
+  company = Contractor
+  title= Mobile App Developer
+  Roles[] = blaah blaah, blaah blaah blaaah, balfaaaha baal,dflsdkjfjdlksf, dsjfhdfhdsflj
+  year= Sept 2012 - Nov 2018
+workexperience[2]
+  company = University of Regina
+  title= Research Assistant
+  Roles[] = blaah blaah, blaah blaah blaaah, balfaaaha baal,dflsdkjfjdlksf, dsjfhdfhdsflj
+  year= Nov 2018 - Present
+Apps[0]
+  Title= Phone.com
+  Description= It brings all cloud communication features together into one app—with the added benefit of being able to make calls over your carrier network or by VoIP call using data coverage or WiFi.
+  Link= https://play.google.com/store/apps/details?id=com.phone.app&hl=en
+  features[]=  Calling module that uses VoIP was implemented using PJSIP library, Features like contact list, favorites
+Apps[1]
+  Title= Phone.com
+  Description= It brings all cloud communication features together into one app—with the added benefit of being able to make calls over your carrier network or by VoIP call using data coverage or WiFi.
+  Link= https://play.google.com/store/apps/details?id=com.phone.app&hl=en
+  features[]=  Calling module that uses VoIP was implemented using PJSIP library, Features like contact list, favorites
+  

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DavinderResume</string>
+    <string name="action_settings">Settings</string>
+    <string name="tagline">Striving for excellence</string>
+    <string name="name">Davinder Pal Singh</string>
+    <string name="action_github">github</string>
+    <string name="title_activity_app_detail">AppDetailActivity</string>
+    <string name="about_app">Description</string>
+    <string name="key_features">Key Features</string>
+    <string name="app_object_error">Sorry, We were not able to show app details</string>
+    <string name="bullet_style">\u2022</string>
+    <string name="error_message">Error occured while loading Resume</string>
+</resources>

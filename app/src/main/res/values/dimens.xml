@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_bar_height">250dp</dimen>
+    <dimen name="medium_title_text">16sp</dimen>
+    <dimen name="content_card_elevation">5dp</dimen>
+    <dimen name="heading_size">19sp</dimen>
+    <dimen name="card_radius">5dp</dimen>
+    <dimen name="card_margin">10dp</dimen>
+    <dimen name="layout_margin">10dp</dimen>
+    <dimen name="app_detail_margin">2dp</dimen>
+</resources>

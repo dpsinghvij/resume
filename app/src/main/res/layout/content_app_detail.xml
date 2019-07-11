@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_app_detail"
+        tools:context=".views.AppDetailActivity"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/layout_margin">
+    <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtAboutAppHeading"
+            android:textStyle="bold"
+            android:textColor="@color/heading"
+            android:layout_margin="@dimen/app_detail_margin"
+            android:text="@string/about_app"/>
+    <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtAboutApp"
+            android:layout_margin="@dimen/app_detail_margin"
+            android:text="@string/about_app"/>
+    <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtKeyFeaturesHeading"
+            android:textStyle="bold"
+            android:textColor="@color/heading"
+            android:layout_margin="@dimen/app_detail_margin"
+            android:text="@string/key_features"/>
+    <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lvFeatures"
+            android:textSize="@dimen/medium_title_text"
+            android:layout_margin="@dimen/app_detail_margin"
+            android:text="@string/key_features"
+            android:divider="@null"/>
+
+</LinearLayout>
