@@ -1,5 +1,8 @@
 package com.resume.davinder.utils
 
+/***
+ * Constants used over the file
+ */
 class Constants{
     companion object{
         const val EXTRA_OBJECT="appinfo"

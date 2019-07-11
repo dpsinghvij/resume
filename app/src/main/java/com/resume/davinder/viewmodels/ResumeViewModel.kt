@@ -13,6 +13,9 @@ import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
 import javax.inject.Inject
 
+/**
+ * ViewModel class for the MainActivity
+ */
 class ResumeViewModel: BaseViewModel(){
     @Inject
     lateinit var resumeApi:ResumeApi
