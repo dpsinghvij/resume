@@ -43,14 +43,17 @@ class AppDetailActivity : AppCompatActivity() {
         }
         fab.setOnClickListener { view ->
             // Display app url
-            openUrl(app.link)
+            if(appDetailViewModel.validateUrl(app.link))
+                openUrl(app.link)
         }
         appDetailViewModel= ViewModelProviders.of(this).get(AppDetailViewModel::class.java)
+
         supportActionBar?.title= app.title
         txtAboutApp.text= app.description
         val arrayAdapter= ArrayAdapter<String>(this, com.resume.davinder.R.layout.cell_features,
             com.resume.davinder.R.id.txtFeature,app.features)
         lvFeatures.adapter= arrayAdapter as ListAdapter?
+
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {

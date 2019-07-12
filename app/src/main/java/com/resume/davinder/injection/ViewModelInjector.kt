@@ -4,7 +4,7 @@ import com.resume.davinder.viewmodels.ResumeViewModel
 import dagger.Component
 import javax.inject.Singleton
 
-
+@Singleton
 @Component(modules = [NetworkModule::class])
 interface ViewModelInjector{
     fun inject(resumeViewModel: ResumeViewModel)

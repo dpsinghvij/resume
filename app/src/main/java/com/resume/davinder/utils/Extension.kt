@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.webkit.URLUtil
 import android.widget.Toast
 import java.lang.Exception
 
@@ -45,4 +46,8 @@ fun FloatingActionButton.hideButton() {
         behavior.isAutoHideEnabled = false
     }
     this.hide()
+}
+
+fun String.validateUrl():Boolean{
+    return URLUtil.isValidUrl(this)
 }

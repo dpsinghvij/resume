@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun startEmailAction() {
         val intent = Intent(Intent.ACTION_SEND)
-        intent.type = "text/plain"
+        intent.type = Constants.IME_TYPE
         intent.putExtra(Intent.EXTRA_EMAIL, arrayOf("dpsinghvij@gmail.com"))
         intent.putExtra(Intent.EXTRA_SUBJECT, Constants.SUBJECT)
         intent.putExtra(Intent.EXTRA_TEXT, Constants.EMAIL_BODY)

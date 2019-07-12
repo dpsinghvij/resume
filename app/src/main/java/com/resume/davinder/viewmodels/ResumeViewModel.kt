@@ -2,12 +2,14 @@ package com.resume.davinder.viewmodels
 
 import android.arch.lifecycle.MutableLiveData
 import android.provider.SyncStateContract
+import android.support.test.espresso.IdlingResource
 import android.util.Log
 import android.view.View
 import com.resume.davinder.R
 import com.resume.davinder.model.ResumeData
 import com.resume.davinder.network.ResumeApi
 import com.resume.davinder.utils.Constants
+import com.resume.davinder.utils.SimpleIdlingResource
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
@@ -24,7 +26,7 @@ class ResumeViewModel: BaseViewModel(){
     val resumeMutableLiveData: MutableLiveData<ResumeData> = MutableLiveData()
     val intentType: MutableLiveData<Int> = MutableLiveData()
     val errorMessage:MutableLiveData<Int> = MutableLiveData()
-
+    val idlingResource:SimpleIdlingResource = SimpleIdlingResource()
     private lateinit var subscription: Disposable
     init {
         loadUserProfile()
@@ -46,12 +48,14 @@ class ResumeViewModel: BaseViewModel(){
     }
 
     private fun onLoadStarted() {
+        idlingResource.setIdleState(false)
         loadingProgressVisibility.value = View.VISIBLE
         errorMessage.value= null
     }
 
     private fun onLoadFinished() {
         //loadingProgressVisibility.value = View.GONE
+        idlingResource.setIdleState(true)
         loadingProgressVisibility.postValue(View.GONE)
     }
 
