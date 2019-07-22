@@ -1,6 +1,7 @@
 
-# Resume App [gist](http://bit.ly/2Y5Zu5P)
+# Resume App 
 An app to display my resume that is built using MVVM architecure, Retrofit, RxJava, Dagger2 and other latest android features.
+[Download Link](http://bit.ly/2Y5Zu5P)
 
 ## Data Source
 The data is loaded using the [gist](https://gist.github.com/dpsinghvij/70d574456b74409ec4ebabae620ac8ba)
